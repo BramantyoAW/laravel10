@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Shop extends Model
 {
     use HasFactory;
+    protected $table = 'shop';
+    protected $fillable = ['shop_url','access_token','install_date'];
 }
